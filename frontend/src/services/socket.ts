@@ -1,7 +1,7 @@
 import { io, Socket } from "socket.io-client";
 
 const SOCKET_URL =
-  "http://192.168.1.3:5000";
+   "https://realtime-chat-app-4ne6.onrender.com";
 
 const socket: Socket =
   io(SOCKET_URL, {
