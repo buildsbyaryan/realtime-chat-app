@@ -1,8 +1,10 @@
 import axios from "axios";
 
-const API_URL =
-  "https://realtime-chat-app-4ne6.onrender.com/api";
+// const API_URL =
+//   "http://localhost:5000";
 
+  const API_URL =
+  "https://realtime-chat-app-4ne6.onrender.com/api";
 const api = axios.create({
   baseURL: API_URL,
   timeout: 10000,
@@ -22,7 +24,7 @@ export const getMessages =
     try {
       const response =
         await api.get(
-          "api/messages",
+      "/messages"
         );
 
       return response.data;
